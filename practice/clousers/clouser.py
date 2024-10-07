@@ -11,7 +11,12 @@ def f1():
     x = 88
     def f2():
         print(x)
+        def f3():
+            print(f2)
+        return f3
     return f2
+
+
 
 myRes = f1()
 myRes()
